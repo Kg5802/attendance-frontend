@@ -3,7 +3,7 @@ import { logout } from "../app/authSlice";
 
 const base = fetchBaseQuery({
   baseUrl:
-    import.meta.env.VITE_API_URL || "http://localhost:5000/api",
+    import.meta.env.VITE_API_URL || "attendance-backend-theta.vercel.app",
 
   prepareHeaders: (headers, { getState }) => {
     const token = getState().auth.token;
